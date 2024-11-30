@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Word Scramble Game</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Word Scramble Game</h1>
+    <div class="game-card">
+      <div class="word-container">
+        <p class="word"></p>
+      </div>
+      <div class="details">
+        <p class="hint">Hint: <span></span></p>
+        <div class="timer">
+          <p>Time Left:</p>
+          <div class="progress-bar">
+            <span></span>
+          </div>
+        </div>
+      </div>
+      <input type="text" spellcheck="false" placeholder="Enter the unscrambled word">
+      <div class="buttons">
+        <button class="refresh-word">Refresh Word</button>
+        <button class="check-word">Check Word</button>
+      </div>
+    </div>
+  </div>
+  <!-- Notification Modals -->
+  <div class="modal hidden">
+    <div class="modal-content">
+      <p class="modal-message"></p>
+      <button class="close-modal">OK</button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

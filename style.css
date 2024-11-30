@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(120deg, #e0f7fa, #80deea); /* Soft blue gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+  padding: 20px; 
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for readability */
+  border-radius: 12px; /* Rounded corners */
+}
+
+h1 {
+  font-size: clamp(1.5rem, 4vw + 1rem, 2.5rem);
+  margin-bottom: 20px;
+  color: #004d40; 
+}
+
+.game-card {
+  background: #ffffff; 
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); 
+  padding: 20px;
+}
+
+.word-container {
+  margin: 20px 0;
+}
+
+.word {
+  font-size: clamp(2rem, 5vw + 1rem, 3rem); 
+  font-weight: bold;
+  color: #00796b; 
+}
+
+.details {
+  margin-bottom: 20px;
+}
+
+.hint {
+   font-size: .9rem; 
+   color: #555; 
+}
+
+.timer {
+   display: flex;
+   align-items: center;
+   margin-top: 10px;
+}
+
+.progress-bar {
+   background: #b2ebf2; 
+   height: .5rem; 
+   flex-grow: 1; 
+   border-radius: .25rem; 
+}
+
+.progress-bar span {
+   display: block;
+   height: inherit; 
+   background-color: #00796b; 
+}
+
+input {
+    width: calc(100% - .5rem); 
+    padding:.75rem; 
+    font-size:.95rem; 
+    margin-top:.5rem; 
+    border-radius:.25rem; 
+    border:none; 
+    background-color:#e0f7fa; 
+    transition:.3s ease-in-out;
+
+}
+
+input::placeholder {
+    color:#004d40; 
+}
+
+input:hover,
+input:focus {
+    box-shadow: inset -2px -2px rgba(0,121,107,.3), inset -2px -2px rgba(0,121,107,.3); 
+    outline:none;
+}
+
+.buttons {
+    display:flex; 
+    justify-content: space-between; 
+    margin-top:.75rem; 
+}
+
+button {
+    flex-grow:1; 
+    padding:.75rem; 
+    margin:.25rem; 
+    border:none; 
+    border-radius:.25rem; 
+    font-size:.95rem; 
+    cursor:pointer; 
+    transition:.3s ease-in-out;
+
+}
+
+.refresh-word {
+    background:#ff7043; 
+    color:white;
+
+}
+
+.check-word {
+    background:#00796b; 
+    color:white;
+
+}
+
+button:hover {
+   opacity:.9; 
+   transform:.05s scale(1.02); 
+
+}
+
+.modal {
+   position:absolute; 
+   top:0; 
+   left:0; 
+   right:0; 
+   bottom:0; 
+   display:flex; 
+   justify-content:center; 
+   align-items:center; 
+   background-color:rgba(0,0,0,.6); 
+
+}
+
+.modal.hidden {
+   display:none;
+
+}
+
+.modal-content {
+   background:white; 
+   padding:.75rem;
+   border-radius:.5rem;
+   text-align:center; 
+
+}
+
+.modal-message {
+   font-size:.95rem;
+   margin-bottom:.75rem;
+   color:#333;
+
+}
+
+.close-modal {
+   padding:.75rem1.25rem;
+   background:#00796b;
+   color:white;
+   border:none;
+   border-radius:.25rem;
+
+}
+.close-modal:hover{
+   opacity:.8;
+
+}
